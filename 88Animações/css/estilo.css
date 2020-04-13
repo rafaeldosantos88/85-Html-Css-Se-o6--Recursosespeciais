@@ -1,0 +1,32 @@
+
+
+@keyframes animacao-caixa{ /* From{de} to{para}Para identificar que estamos criando uma animação*/
+
+	from{ /*Estado incial*/
+  background: red;
+  border-radius: 0px;
+  top:0;
+  left:0;
+	}
+	to{/*Estado final*/
+		background: blue;
+		border-radius: 300px;
+		top:200px;
+  		left:200px;
+	}
+
+}
+
+#caixa{
+	width:300px;
+	height: 300px;
+	background: red;
+	position:relative;
+	animation-name:animacao-caixa;
+	animation-duration: 5s;/*aqui colocamos a duração dessa animação*/ 
+	animation-delay: 2s; /* demora para execultar animação*/
+	animation-iteration-count:2; /*vai execultar duas vezes animação*/
+	animation-direction: alternate;/*de forma alternada*/
+/*Posso colocar em uma unica lina animation:animacao-caixa 5s 3s alternate;*/
+
+}
